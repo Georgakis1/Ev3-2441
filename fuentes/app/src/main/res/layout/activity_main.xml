@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/toolbar"
+        ></include>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margenItem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/azul"
+
+
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margenLateral"
+            android:layout_marginTop="@dimen/margenItem"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+
+            android:text="cantidad de frases:"
+            android:textSize="@dimen/itemSize"
+
+
+            ></TextView>
+        <Spinner
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cantidadSpn"
+            android:layout_marginRight="@dimen/margenLateral"
+
+
+
+
+            ></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margenItem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rojo"
+
+            android:id="@+id/pedirBtn"
+            android:text="Pedir Consejo"
+            android:textSize="@dimen/itemSize"
+            android:onClicl="pedirConsejo"
+            android:layout_marginLeft="@dimen/margenItem"
+            android:layout_marginRight="@dimen/margenItem"
+            ></Button>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="@dimen/margenItem"
+        android:id="@+id/fraseslv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        ></ListView>
+
+
+
+
+
+</LinearLayout>

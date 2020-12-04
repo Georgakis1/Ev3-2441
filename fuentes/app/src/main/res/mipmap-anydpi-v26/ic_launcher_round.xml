@@ -1,0 +1,12 @@
+package cl.inacap.aplicacionconciertos.adapter;
+
+import android.app.Activity;
+import android.content.Context;
+import android.widget.ArrayAdapter;
+
+import androidx.annotation.NonNull;
+
+import java.util.List;
+
+import cl.inacap.aplicacionconciertos.dto.Evento;
+
